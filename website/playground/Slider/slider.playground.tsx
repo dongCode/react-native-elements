@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Slider, Icon } from '@rneui/base';
+import { Slider, Icon } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -12,7 +12,7 @@ const SliderPlayground = () => {
         type: PropTypes.Boolean,
       },
       animationConfig: {
-        valie: `{}`,
+        valie: '{}',
         type: PropTypes.Object,
       },
       animationType: {
@@ -61,15 +61,15 @@ const SliderPlayground = () => {
       },
       onSlidingComplete: {
         type: PropTypes.Function,
-        value: `() => console.log("onSlidingComplete()")`,
+        value: '() => console.log("onSlidingComplete()")',
       },
       onSlidingStart: {
         type: PropTypes.Function,
-        value: `() => console.log("onSlidingStart()")`,
+        value: '() => console.log("onSlidingStart()")',
       },
       onValueChange: {
         type: PropTypes.Function,
-        value: `(value) => console.log("onValueChange()",value)`,
+        value: '(value) => console.log("onValueChange()",value)',
       },
 
       orientation: {
@@ -88,12 +88,12 @@ const SliderPlayground = () => {
       },
 
       style: {
-        value: `{width:"80%",height:200}`,
+        value: '{width:"80%",height:200}',
         type: PropTypes.Object,
       },
 
       thumbStyle: {
-        value: `{ height: 20, width: 20 }`,
+        value: '{ height: 20, width: 20 }',
         type: PropTypes.Object,
       },
 
@@ -115,15 +115,15 @@ const SliderPlayground = () => {
 
       thumbTintColor: {
         type: PropTypes.String,
-        value: `#0c0`,
+        value: '#0c0',
       },
 
       thumbTouchSize: {
         type: PropTypes.Object,
-        value: `{width: 40, height: 40}`,
+        value: '{width: 40, height: 40}',
       },
       trackStyle: {
-        value: `{ height: 10,borderRadius:20 }`,
+        value: '{ height: 10,borderRadius:20 }',
         type: PropTypes.Object,
       },
 
@@ -137,7 +137,7 @@ const SliderPlayground = () => {
       Icon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Slider', 'Icon'],
       },
     },

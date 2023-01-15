@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Avatar } from '@rneui/base';
+import { Avatar } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -12,40 +12,40 @@ const AvatarPlay = () => {
         type: PropTypes.Number,
       },
       avatarStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       containerStyle: {
-        value: `{ backgroundColor: '#BDBDBD' }`,
+        value: "{ backgroundColor: '#BDBDBD' }",
         type: PropTypes.Object,
       },
       icon: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       iconStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       imageProps: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       onLongPress: {
-        value: `()=>alert('onLongPress')`,
+        value: "()=>alert('onLongPress')",
         type: PropTypes.Function,
       },
       onPress: {
-        value: `()=>alert('onPress')`,
+        value: "()=>alert('onPress')",
         type: PropTypes.Function,
       },
 
       overlayContainerStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       placeholderStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       rounded: {
@@ -66,7 +66,7 @@ const AvatarPlay = () => {
       },
 
       source: {
-        value: `{uri:""}`,
+        value: '{uri:""}',
         type: PropTypes.Object,
       },
       title: {
@@ -75,7 +75,7 @@ const AvatarPlay = () => {
         description: 'Visible label.',
       },
       titleStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       renderPlaceholderContent: {
@@ -107,7 +107,7 @@ const AvatarPlay = () => {
       Avatar,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Avatar'],
       },
     },

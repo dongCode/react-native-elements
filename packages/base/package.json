@@ -1,5 +1,5 @@
 {
-  "name": "@rneui/base",
+  "name": "@dplus/rn-ui",
   "version": "0.0.1",
   "description": "Cross Platform React Native UI Toolkit",
   "main": "dist/index.js",

@@ -1,5 +1,5 @@
 import { withTheme } from '../config';
-import { Input, InputProps } from '@rneui/base/dist/Input/Input';
+import { Input, InputProps } from '@dplus/rn-ui/dist/Input/Input';
 
 export { Input };
 export type { InputProps };

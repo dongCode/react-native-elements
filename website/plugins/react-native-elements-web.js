@@ -46,7 +46,7 @@ const a = function () {
                 }),
               ],
               include: [
-                path.resolve(nodeModules, '@rneui/base/src'),
+                path.resolve(nodeModules, '@dplus/rn-ui/src'),
                 path.resolve(nodeModules, 'react-native-elements'),
                 path.resolve(nodeModules, 'react-native-vector-icons'),
                 path.resolve(nodeModules, 'react-native-ratings'),
@@ -59,7 +59,7 @@ const a = function () {
         resolve: {
           alias: {
             'react-native$': 'react-native-web',
-            '@rneui/base$': path.resolve(nodeModules, '@rneui/base/src'),
+            '@dplus/rn-ui$': path.resolve(nodeModules, '@dplus/rn-ui/src'),
             'react-native-linear-gradient': 'react-native-web-linear-gradient',
           },
           fallback: isServer

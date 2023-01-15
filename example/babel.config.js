@@ -11,7 +11,7 @@ module.exports = function (api) {
         {
           extensions: ['.js', '.ios.js', '.android.js', '.json', '.tsx', '.ts'],
           alias: {
-            '@rneui/base/dist': path.resolve(
+            '@dplus/rn-ui/dist': path.resolve(
               __dirname,
               '..',
               'packages/base/src'
@@ -26,7 +26,7 @@ module.exports = function (api) {
               '..',
               'node_modules/@expo/vector-icons/build/Icons'
             ),
-            '@rneui/base': path.resolve(__dirname, '..', 'packages/base/src'),
+            '@dplus/rn-ui': path.resolve(__dirname, '..', 'packages/base/src'),
           },
         },
       ],

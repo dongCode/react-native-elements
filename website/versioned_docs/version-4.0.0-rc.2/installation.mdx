@@ -22,14 +22,14 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @rneui/themed @rneui/base
+npm install @rneui/themed @dplus/rn-ui
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn add @rneui/themed @rneui/base
+yarn add @rneui/themed @dplus/rn-ui
 ```
 
 </TabItem>
@@ -46,7 +46,7 @@ values={[
 <TabItem value="npm">
 
 ```bash
-# @rneui/base
+# @dplus/rn-ui
 npm install react-native-elements/react-native-elements#base
 
 # @rneui/themed
@@ -57,8 +57,8 @@ npm install react-native-elements/react-native-elements#themed
 <TabItem value="yarn">
 
 ```bash
-# @rneui/base
-yarn add @rneui/base@github:react-native-elements/react-native-elements#base
+# @dplus/rn-ui
+yarn add @dplus/rn-ui@github:react-native-elements/react-native-elements#base
 
 # @rneui/themed
 yarn add @rneui/themed@github:react-native-elements/react-native-elements#themed
@@ -233,7 +233,7 @@ The major difference is that React Native can support JSX and advanced javascrip
 After creating a new create-react-app project, run the following commands.
 
 ```bash
-yarn add  @rneui/base @rneui/themed react-native-web react-native-vector-icons
+yarn add  @dplus/rn-ui @rneui/themed react-native-web react-native-vector-icons
 ```
 
 ```bash
@@ -249,7 +249,7 @@ const { override, addBabelPlugins, babelInclude } = require('customize-cra');
 module.exports = override(
   ...addBabelPlugins('@babel/plugin-proposal-class-properties'),
   babelInclude([
-    path.resolve(__dirname, 'node_modules/@rneui/base'),
+    path.resolve(__dirname, 'node_modules/@dplus/rn-ui'),
     path.resolve(__dirname, 'node_modules/@rneui/themed'),
     path.resolve(__dirname, 'node_modules/react-native-vector-icons'),
     path.resolve(__dirname, 'node_modules/react-native-ratings'),

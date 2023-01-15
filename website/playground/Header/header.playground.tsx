@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Header, Icon } from '@rneui/base';
+import { Header, Icon } from '@dplus/rn-ui';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -90,7 +90,7 @@ const HeaderPlayground = () => {
       Icon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Header', 'Icon'],
       },
       'react-native-safe-area-context': {

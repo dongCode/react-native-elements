@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image } from '@rneui/base';
+import { Image } from '@dplus/rn-ui';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -10,7 +10,7 @@ const ImagePlayground = () => {
     props: {
       containerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       ImageComponent: {
         type: PropTypes.ReactNode,
@@ -19,11 +19,11 @@ const ImagePlayground = () => {
       },
       onLongPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongPress()")`,
+        value: '() => console.log("onLongPress()")',
       },
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onPress()")`,
+        value: '() => console.log("onPress()")',
       },
       PlaceholderContent: {
         type: PropTypes.ReactNode,
@@ -31,7 +31,7 @@ const ImagePlayground = () => {
       },
       placeholderStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       transition: {
         type: PropTypes.Boolean,
@@ -43,18 +43,19 @@ const ImagePlayground = () => {
       },
       source: {
         type: PropTypes.Object,
-        value: `{uri: "https://user-images.githubusercontent.com/5962998/65694309-a825f000-e043-11e9-8382-db0dba0851e3.png"}`,
+        value:
+          '{uri: "https://user-images.githubusercontent.com/5962998/65694309-a825f000-e043-11e9-8382-db0dba0851e3.png"}',
       },
       style: {
         type: PropTypes.Object,
-        value: `{ width: 200, height: 200 }`,
+        value: '{ width: 200, height: 200 }',
       },
     },
     scope: {
       Image,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Image'],
       },
     },

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card } from '@rneui/base';
+import { Card } from '@dplus/rn-ui';
 import { View, Image, Text } from 'react-native';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -29,11 +29,11 @@ const CardPlayground = () => {
         },
       },
       containerStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
       wrapperStyle: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
       },
     },
@@ -44,7 +44,7 @@ const CardPlayground = () => {
       Text,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Card'],
       },
       // "react-native": {

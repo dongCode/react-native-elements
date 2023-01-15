@@ -1,4 +1,4 @@
-import { Divider, DividerProps } from '@rneui/base/dist/Divider/Divider';
+import { Divider, DividerProps } from '@dplus/rn-ui/dist/Divider/Divider';
 import { withTheme } from '../config';
 
 export { Divider };

@@ -7,7 +7,7 @@
 
 import React from 'react';
 import * as RNE from 'react-native-elements';
-import * as RNEUI from '@rneui/base';
+import * as RNEUI from '@dplus/rn-ui';
 import * as RNEUI_Layout from '@rneui/layout';
 import LinearGradient from 'react-native-linear-gradient';
 

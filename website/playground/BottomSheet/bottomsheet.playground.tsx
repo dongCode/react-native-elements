@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { View } from 'react-native';
-import { BottomSheet, Text } from '@rneui/base';
+import { BottomSheet, Text } from '@dplus/rn-ui';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -12,7 +12,7 @@ const BottomSheetPlayground = () => {
     props: {
       children: {
         type: PropTypes.ReactNode,
-        value: `<Text>Some Content</Text>`,
+        value: '<Text>Some Content</Text>',
       },
       isVisible: {
         type: PropTypes.Boolean,
@@ -20,7 +20,7 @@ const BottomSheetPlayground = () => {
       },
       modalProps: {
         type: PropTypes.Object,
-        value: `{ presentationStyle: "fullScreen" , }`,
+        value: '{ presentationStyle: "fullScreen" , }',
         description: 'Modal Props -> https://reactnative.dev/docs/modal',
       },
     },
@@ -29,7 +29,7 @@ const BottomSheetPlayground = () => {
       Text,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['BottomSheet', 'Text'],
       },
     },

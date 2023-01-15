@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@rneui/*": ["./packages/*/src"],
-      "@rneui/base/dist/*": ["./packages/base/src/*"]
+      "@dplus/rn-ui/dist/*": ["./packages/base/src/*"]
     },
     "removeComments": true,
     "composite": true,

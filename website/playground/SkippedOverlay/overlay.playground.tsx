@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
-import { Overlay } from '@rneui/base';
+import { Overlay } from '@dplus/rn-ui';
 import Modal from 'modal-react-native-web';
 
 import Playground from '../../src/components/Playground';
@@ -12,11 +12,12 @@ const OverlayPlayground = () => {
     props: {
       backdropStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       children: {
         type: PropTypes.ReactNode,
-        value: `<Text>Some content</Text><TouchableOpacity onPress={()=>setIsVisible(!isVisible)}><Text>Click to close</Text></TouchableOpacity>`,
+        value:
+          '<Text>Some content</Text><TouchableOpacity onPress={()=>setIsVisible(!isVisible)}><Text>Click to close</Text></TouchableOpacity>',
         propHook: ({ getInstrumentOnChange, fnBodyAppend }) => ({
           JSXAttribute(path) {
             if (path.get('name').node.name === 'onPress') {
@@ -41,19 +42,19 @@ const OverlayPlayground = () => {
       },
       ModalComponent: {
         type: PropTypes.Object,
-        value: `Modal`,
+        value: 'Modal',
       },
       onBackdropPress: {
         type: PropTypes.Function,
-        value: `() => setIsVisible(!isVisible)`,
+        value: '() => setIsVisible(!isVisible)',
         propHook: {
-          what: `false`,
-          into: `isVisible`,
+          what: 'false',
+          into: 'isVisible',
         },
       },
       overlayStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
     },
     scope: {
@@ -63,7 +64,7 @@ const OverlayPlayground = () => {
       TouchableOpacity,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Overlay', 'Text', 'TouchableOpacity'],
       },
       'modal-react-native-web': {

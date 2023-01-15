@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SocialIcon } from '@rneui/base';
+import { SocialIcon } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -9,7 +9,7 @@ const SocialIconPlayground = () => {
     props: {
       activityIndicatorStyle: {
         type: PropTypes.Object,
-        value: ``,
+        value: '',
         description: 'Style to render when in loading state',
       },
       button: { type: PropTypes.Boolean, value: false },
@@ -28,7 +28,7 @@ const SocialIconPlayground = () => {
       },
       fontStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       fontWeight: {
         type: PropTypes.String,
@@ -37,7 +37,7 @@ const SocialIconPlayground = () => {
       },
       iconColor: {
         type: PropTypes.String,
-        value: ``,
+        value: '',
       },
       iconSize: {
         type: PropTypes.Number,
@@ -45,11 +45,11 @@ const SocialIconPlayground = () => {
       },
       iconStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       iconType: {
         type: PropTypes.String,
-        value: `font-awesome`,
+        value: 'font-awesome',
       },
       light: {
         type: PropTypes.Boolean,
@@ -61,11 +61,11 @@ const SocialIconPlayground = () => {
       },
       onLongPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongPress()")`,
+        value: '() => console.log("onLongPress()")',
       },
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onPress()")`,
+        value: '() => console.log("onPress()")',
       },
       raised: {
         type: PropTypes.Boolean,
@@ -73,7 +73,7 @@ const SocialIconPlayground = () => {
       },
       style: {
         type: PropTypes.Object,
-        value: `{paddingHorizontal:10}`,
+        value: '{paddingHorizontal:10}',
       },
       title: {
         type: PropTypes.String,
@@ -86,14 +86,14 @@ const SocialIconPlayground = () => {
       },
       underlayColor: {
         type: PropTypes.String,
-        value: ``,
+        value: '',
       },
     },
     scope: {
       SocialIcon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['SocialIcon'],
       },
     },

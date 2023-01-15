@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FAB } from '@rneui/base';
+import { FAB } from '@dplus/rn-ui';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -10,7 +10,7 @@ const FabPlayground = () => {
     props: {
       style: {
         type: PropTypes.Object,
-        value: `{width:"80%",margin:20}`,
+        value: '{width:"80%",margin:20}',
       },
       placement: {
         type: PropTypes.Enum,
@@ -44,14 +44,14 @@ const FabPlayground = () => {
       },
       icon: {
         type: PropTypes.Object,
-        value: `{ name: 'edit', color: '#fff' }`,
+        value: "{ name: 'edit', color: '#fff' }",
       },
     },
     scope: {
       FAB,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['FAB'],
       },
     },

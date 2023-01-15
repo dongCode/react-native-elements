@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { View } from 'react-native';
-import { Rating } from '@rneui/base';
+import { Rating } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 import SocialIconPlayground from '.';
@@ -24,11 +24,11 @@ const RatingPlayground = () => {
       },
       onFinishRating: {
         type: PropTypes.Function,
-        value: `() => console.log("onFinishRating()")`,
+        value: '() => console.log("onFinishRating()")',
       },
       onStartRating: {
         type: PropTypes.Function,
-        value: `() => console.log("onStartRating()")`,
+        value: '() => console.log("onStartRating()")',
       },
       ratingBackgroundColor: {
         type: PropTypes.String,
@@ -60,7 +60,7 @@ const RatingPlayground = () => {
       },
       reviews: {
         type: PropTypes.Array,
-        value: `["Terrible", "Bad", "Okay", "Good", "Great"]`,
+        value: '["Terrible", "Bad", "Okay", "Good", "Great"]',
       },
       showRating: {
         type: PropTypes.Boolean,
@@ -72,7 +72,7 @@ const RatingPlayground = () => {
       },
       style: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       type: {
         type: PropTypes.Enum,
@@ -90,7 +90,7 @@ const RatingPlayground = () => {
       Rating,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Rating'],
       },
     },

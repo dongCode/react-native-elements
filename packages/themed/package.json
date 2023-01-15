@@ -50,10 +50,10 @@
     "logo": "https://opencollective.com/react-native-elements/logo.txt"
   },
   "peerDependencies": {
-    "@rneui/base": "0.0.1"
+    "@dplus/rn-ui": "0.0.1"
   },
   "devDependencies": {
-    "@rneui/base": "0.0.1"
+    "@dplus/rn-ui": "0.0.1"
   },
   "repository": {
     "type": "git",

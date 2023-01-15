@@ -1,5 +1,5 @@
 import { withTheme } from '../config';
-import { Overlay, OverlayProps } from '@rneui/base/dist/Overlay/Overlay';
+import { Overlay, OverlayProps } from '@dplus/rn-ui/dist/Overlay/Overlay';
 
 export { Overlay };
 export type { OverlayProps };

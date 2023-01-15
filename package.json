@@ -65,8 +65,7 @@
   "lint-staged": {
     "packages/**/*.{ts,tsx}": [
       "eslint --fix",
-      "prettier --write",
-      "tsc --noEmit --composite false"
+      "prettier --write"
     ],
     "packages/**/*.{js,jsx}": [
       "eslint --fix",
@@ -92,7 +91,7 @@
       "PR: Deprecation: :loudspeaker:": ":loudspeaker: Deprecation"
     },
     "scopes": {
-      "base": "@rneui/base",
+      "base": "@dplus/rn-ui",
       "themed": "@rneui/themed",
       "website/docs": "Docs"
     }

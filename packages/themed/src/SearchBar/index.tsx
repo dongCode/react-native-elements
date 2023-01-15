@@ -2,10 +2,10 @@ import { withTheme } from '../config';
 import {
   SearchBar,
   SearchBarProps,
-} from '@rneui/base/dist/SearchBar/SearchBar';
-import { SearchBarAndroidProps } from '@rneui/base/dist/SearchBar/SearchBar-android';
-import { SearchBarIosProps } from '@rneui/base/dist/SearchBar/SearchBar-ios';
-import { SearchBarDefaultProps } from '@rneui/base/dist/SearchBar/SearchBar-default';
+} from '@dplus/rn-ui/dist/SearchBar/SearchBar';
+import { SearchBarAndroidProps } from '@dplus/rn-ui/dist/SearchBar/SearchBar-android';
+import { SearchBarIosProps } from '@dplus/rn-ui/dist/SearchBar/SearchBar-ios';
+import { SearchBarDefaultProps } from '@dplus/rn-ui/dist/SearchBar/SearchBar-default';
 
 export { SearchBar };
 export type {

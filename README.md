@@ -46,7 +46,7 @@ Cross Platform <a href="https://reactnative.dev">React Native</a> UI Toolkit
 ## Installation
 
 ```bash
-npm install @rneui/themed @rneui/base
+npm install @rneui/themed @dplus/rn-ui
 ```
 
 Follow
@@ -57,7 +57,7 @@ to install React Native Elements!
 
 | Package           | Version                                                                                                                          | Downloads                                                                    |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **@rneui/base**   | [![badge](https://img.shields.io/npm/v/@rneui/base.svg?style=flat-square-square)](https://www.npmjs.com/package/@rneui/base)     | ![npm](https://img.shields.io/npm/dm/@rneui/base?style=flat-square-square)   |
+| **@dplus/rn-ui**  | [![badge](https://img.shields.io/npm/v/@dplus/rn-ui.svg?style=flat-square-square)](https://www.npmjs.com/package/@dplus/rn-ui)   | ![npm](https://img.shields.io/npm/dm/@dplus/rn-ui?style=flat-square-square)  |
 | **@rneui/themed** | [![badge](https://img.shields.io/npm/v/@rneui/themed.svg?style=flat-square-square)](https://www.npmjs.com/package/@rneui/themed) | ![npm](https://img.shields.io/npm/dm/@rneui/themed?style=flat-square-square) |
 
 ## Quick Start
@@ -66,7 +66,7 @@ Start using the components or try it on
 [Snack](https://snack.expo.dev/@arpitbhalla/react-native-elements).
 
 ```tsx
-import { Button } from '@rneui/base';
+import { Button } from '@dplus/rn-ui';
 
 const App = () => <Button title="Hello World!" />;
 ```

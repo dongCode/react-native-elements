@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text } from '@rneui/base';
+import { Text } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -13,7 +13,7 @@ const TextPlayground = () => {
         description: 'Heading 1',
       },
       h1Style: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
         description: 'Styling for h1',
       },
@@ -23,7 +23,7 @@ const TextPlayground = () => {
         description: 'Heading 2',
       },
       h2Style: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
         description: 'Styling for h2',
       },
@@ -33,7 +33,7 @@ const TextPlayground = () => {
         description: 'Heading 3',
       },
       h3Style: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
         description: 'Styling for h3',
       },
@@ -43,12 +43,12 @@ const TextPlayground = () => {
         description: 'Heading 4',
       },
       h4Style: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
         description: 'Styling for h4',
       },
       style: {
-        value: `{}`,
+        value: '{}',
         type: PropTypes.Object,
         description: 'Styling of the text',
       },
@@ -62,7 +62,7 @@ const TextPlayground = () => {
       Text,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Text'],
       },
     },

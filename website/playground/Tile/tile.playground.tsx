@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tile } from '@rneui/base';
+import { Tile } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -18,15 +18,15 @@ const TilePlayground = () => {
       },
       captionStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       containerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       contentContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       featured: {
         type: PropTypes.Boolean,
@@ -38,20 +38,20 @@ const TilePlayground = () => {
       },
       icon: {
         type: PropTypes.Object,
-        value: ``,
+        value: '',
         description:
           'object {name: string, color: string, size: number, type: string (default is material, or choose from supported icon sets), iconStyle: object(style)}',
       },
       iconContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       ImageComponent: { type: PropTypes.ReactNode, value: null },
       imageContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
-      imageProps: { type: PropTypes.Object, value: `{}` },
+      imageProps: { type: PropTypes.Object, value: '{}' },
       // imageSrc: {
       //   type: PropTypes.ReactNode,
       //   value: `SampleImage`,
@@ -59,11 +59,11 @@ const TilePlayground = () => {
 
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("imageProps()")`,
+        value: '() => console.log("imageProps()")',
       },
       overlayContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       title: {
         type: PropTypes.String,
@@ -75,7 +75,7 @@ const TilePlayground = () => {
       },
       titleStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
 
       width: { type: PropTypes.Number, value: '400' },
@@ -85,7 +85,7 @@ const TilePlayground = () => {
       // SampleImage,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Tile'],
       },
     },

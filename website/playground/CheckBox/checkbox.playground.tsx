@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CheckBox } from '@rneui/base';
+import { CheckBox } from '@dplus/rn-ui';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -31,12 +31,12 @@ const HeaderPlayground = () => {
       },
       checkedIcon: {
         type: PropTypes.Object,
-        value: ``,
-        description: `string OR React Native Component	`,
+        value: '',
+        description: 'string OR React Native Component	',
       },
       checkedTitle: {
         type: PropTypes.String,
-        value: `Great!`,
+        value: 'Great!',
         description: 'Specify a custom checked message (optional)',
       },
       Component: {
@@ -46,7 +46,7 @@ const HeaderPlayground = () => {
       },
       containerStyle: {
         type: PropTypes.Object,
-        value: `{width: "75%"}`,
+        value: '{width: "75%"}',
         description: 'Style of main container (optional)',
       },
       fontFamily: {
@@ -66,7 +66,7 @@ const HeaderPlayground = () => {
       },
       onIconPress: {
         type: PropTypes.Function,
-        value: `() => setChecked(!checked)`,
+        value: '() => setChecked(!checked)',
         propHook: {
           what: '!checked',
           into: 'checked',
@@ -75,17 +75,17 @@ const HeaderPlayground = () => {
       },
       onLongIconPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongIconPress()")`,
+        value: '() => console.log("onLongIconPress()")',
         description: 'onLongPress function for checkbox (optional)',
       },
       onLongPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongPress()")`,
+        value: '() => console.log("onLongPress()")',
         description: 'onLongPress function for checkbox (optional)',
       },
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onPress()")`,
+        value: '() => console.log("onPress()")',
         description: 'onPress function for container (optional)',
       },
       size: {
@@ -95,22 +95,22 @@ const HeaderPlayground = () => {
       },
       textStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
         description: 'Style of text (optional)',
       },
       title: {
         type: PropTypes.Object,
-        value: `"Check for Awesomeness"`,
+        value: '"Check for Awesomeness"',
         description: 'Title of checkbox',
       },
       titleProps: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
         description: 'Additional props for the title Text component (optional)',
       },
       uncheckedColor: {
         type: PropTypes.String,
-        value: `#F00`,
+        value: '#F00',
         description: 'Default unchecked color (optional)',
       },
       uncheckedIcon: {
@@ -123,7 +123,7 @@ const HeaderPlayground = () => {
       CheckBox,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['CheckBox'],
       },
     },

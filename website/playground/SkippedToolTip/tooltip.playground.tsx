@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tooltip, Text } from '@rneui/base';
+import { Tooltip, Text } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 import Modal from 'modal-react-native-web';
@@ -89,7 +89,7 @@ const ToolTipPlayground = () => {
       Modal,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Tooltip', 'Text'],
       },
       'modal-react-native-web': {

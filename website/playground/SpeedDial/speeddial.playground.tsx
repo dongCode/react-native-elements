@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SpeedDial } from '@rneui/base';
+import { SpeedDial } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -26,15 +26,15 @@ const SpeedDialPlayground = () => {
       },
       openIcon: {
         type: PropTypes.Object,
-        value: `{ name: 'close', color: '#fff' }`,
+        value: "{ name: 'close', color: '#fff' }",
       },
       onOpen: {
         type: PropTypes.Function,
-        value: `() => console.log("onOpen()")`,
+        value: '() => console.log("onOpen()")',
       },
       onClose: {
         type: PropTypes.Function,
-        value: `() => console.log("onClose()")`,
+        value: '() => console.log("onClose()")',
       },
       transitionDuration: {
         type: PropTypes.Number,
@@ -42,14 +42,14 @@ const SpeedDialPlayground = () => {
       },
       icon: {
         type: PropTypes.Object,
-        value: `{ name: 'edit', color: '#fff' }`,
+        value: "{ name: 'edit', color: '#fff' }",
       },
     },
     scope: {
       SpeedDial,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['SpeedDial'],
       },
     },

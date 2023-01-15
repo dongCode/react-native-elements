@@ -42,7 +42,7 @@ jobs:
         run: |
           sed -i -e 's/dist/src/g' .gitignore
           git rm -rf packages/*/src
-          jq 'del(.devDependencies."@rneui/base",.peerDependencies."@rneui/base")'  packages/themed/package.json >  packages/themed/package.json.temp
+          jq 'del(.devDependencies."@dplus/rn-ui",.peerDependencies."@dplus/rn-ui")'  packages/themed/package.json >  packages/themed/package.json.temp
           mv packages/themed/package.json.temp packages/themed/package.json
           git add .
           git commit -m "Bleeding Edge Version" -a --no-verify

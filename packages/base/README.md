@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@rneui/base"><img src="https://img.shields.io/npm/v/@rneui/base.svg?style=flat-square"></a>
-  <a href="https://www.npmjs.com/package/@rneui/base"><img src="https://img.shields.io/npm/dm/@rneui/base.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/@dplus/rn-ui"><img src="https://img.shields.io/npm/v/@dplus/rn-ui.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/@dplus/rn-ui"><img src="https://img.shields.io/npm/dm/@dplus/rn-ui.svg?style=flat-square"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&color=0089E3"></a>
   <a href="https://github.com/react-native-elements/react-native-elements"><img src="https://img.shields.io/github/stars/react-native-elements/react-native-elements?label=stars&logo&style=flat-square&color=0089E3"></a>
 
@@ -36,7 +36,7 @@
 ## Installation
 
 ```bash
-npm install @rneui/base
+npm install @dplus/rn-ui
 ```
 
 Follow
@@ -49,7 +49,7 @@ Start using the components or try it on Snack
 [here](https://snack.expo.io/rJu6gJfBZ).
 
 ```js
-import { Button } from '@rneui/base';
+import { Button } from '@dplus/rn-ui';
 
 const App = () => <Button title="Hello World" />;
 ```

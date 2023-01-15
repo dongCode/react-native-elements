@@ -3,7 +3,7 @@ import {
   SocialIcon,
   SocialIconProps,
   SocialMediaType,
-} from '@rneui/base/dist/SocialIcon/SocialIcon';
+} from '@dplus/rn-ui/dist/SocialIcon/SocialIcon';
 
 export { SocialIcon };
 export type { SocialIconProps, SocialMediaType };

@@ -1,6 +1,6 @@
 import { withTheme } from '../config';
-import { TabBase, TabProps } from '@rneui/base/dist/Tab/Tab';
-import { TabItem, TabItemProps } from '@rneui/base/dist/Tab/Tab.Item';
+import { TabBase, TabProps } from '@dplus/rn-ui/dist/Tab/Tab';
+import { TabItem, TabItemProps } from '@dplus/rn-ui/dist/Tab/Tab.Item';
 
 export type { TabProps, TabItemProps };
 

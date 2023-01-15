@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PricingCard } from '@rneui/base';
+import { PricingCard } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -57,7 +57,7 @@ const PricingPlayground = () => {
       PricingCard,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['PricingCard'],
       },
     },

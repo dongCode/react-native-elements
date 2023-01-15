@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TouchableHighlight } from 'react-native';
-import { ListItem, Avatar, Text } from '@rneui/base';
+import { ListItem, Avatar, Text } from '@dplus/rn-ui';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -23,13 +23,13 @@ const ListItemPlayground = () => {
       },
       Component: {
         type: PropTypes.Object,
-        value: `TouchableHighlight`,
+        value: 'TouchableHighlight',
         description:
           'View or TouchableHighlight (default) if onPress method is added as prop',
       },
       containerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       disabled: {
         type: PropTypes.Boolean,
@@ -37,15 +37,15 @@ const ListItemPlayground = () => {
       },
       disabledStyle: {
         type: PropTypes.Object,
-        value: `{opacity:0.5}`,
+        value: '{opacity:0.5}',
       },
       onLongPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongPress()")`,
+        value: '() => console.log("onLongPress()")',
       },
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onLongPress()")`,
+        value: '() => console.log("onLongPress()")',
       },
       pad: {
         type: PropTypes.Number,
@@ -57,7 +57,7 @@ const ListItemPlayground = () => {
       },
       ViewComponent: {
         type: PropTypes.Object,
-        value: ``,
+        value: '',
         description: 'ontainer for linear gradient (for non-expo user)',
       },
     },
@@ -68,7 +68,7 @@ const ListItemPlayground = () => {
       TouchableHighlight,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['ListItem', 'Avatar'],
       },
       'react-native': {

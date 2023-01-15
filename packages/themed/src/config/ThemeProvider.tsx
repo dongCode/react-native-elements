@@ -8,7 +8,7 @@ import {
   ThemeSpacing,
   defaultSpacing,
 } from './theme';
-import { ComponentTheme } from './theme.component';
+import { type ComponentTheme } from './theme.component';
 
 export type { RecursivePartial };
 

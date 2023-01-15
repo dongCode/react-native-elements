@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tab } from '@rneui/base';
+import { Tab } from '@dplus/rn-ui';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -21,7 +21,7 @@ const TabPlayground = () => {
       },
       onChange: {
         type: PropTypes.Function,
-        value: `() => console.log("onChange()")`,
+        value: '() => console.log("onChange()")',
       },
       disableIndicator: {
         type: PropTypes.Boolean,
@@ -29,7 +29,7 @@ const TabPlayground = () => {
       },
       indicatorStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       variant: {
         type: PropTypes.Enum,
@@ -41,7 +41,7 @@ const TabPlayground = () => {
       Tab,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/rn-ui': {
         named: ['Tab'],
       },
     },
