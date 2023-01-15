@@ -1,6 +1,6 @@
 {
   "name": "@rneui/themed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cross Platform React Native UI Toolkit",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -50,10 +50,10 @@
     "logo": "https://opencollective.com/react-native-elements/logo.txt"
   },
   "peerDependencies": {
-    "@dplus/rn-ui": "0.0.1"
+    "@dplus/rn-ui": "0.0.2"
   },
   "devDependencies": {
-    "@dplus/rn-ui": "0.0.1"
+    "@dplus/rn-ui": "0.0.2"
   },
   "repository": {
     "type": "git",
