@@ -12,10 +12,10 @@
   },
   "scripts": {
     "build": "lerna run build",
-    "build:docs-api": "yarn workspace @rneui/doc-gen build",
+    "build:docs-api": "yarn workspace @dplus/doc-gen build",
     "clean-build": "rm -rf packages/*/dist",
     "clean-install": "rimraf node_modules && yarn",
-    "docs-build-api": "yarn workspace @rneui/doc-gen build",
+    "docs-build-api": "yarn workspace @dplus/doc-gen build",
     "docs-build": "yarn docs-build-api && cd website && yarn run build",
     "start": "yarn workspace react-native-elements-app start",
     "format": "prettier --check ./packages",

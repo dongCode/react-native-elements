@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@rneui/*": ["./packages/*/src"],
+      "@dplus/*": ["./packages/*/src"],
       "@dplus/rn-ui/dist/*": ["./packages/base/src/*"]
     },
     "removeComments": true,

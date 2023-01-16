@@ -14,7 +14,7 @@ type TPkg = {
   manifestLocation: string;
 };
 
-const pkgScope = '@rneui';
+const pkgScope = '@dplus';
 
 class Release {
   static async bump(pkg: TPkg) {

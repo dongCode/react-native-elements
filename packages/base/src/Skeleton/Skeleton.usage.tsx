@@ -1,6 +1,6 @@
 import React from 'react';
 import { Skeleton } from '..';
-import { Stack, usage, info } from '@rneui/doc-gen';
+import { Stack, usage, info } from '@dplus/doc-gen';
 
 info(
   'A placeholder preview for content before the data gets loaded, an alternative for spinners.'

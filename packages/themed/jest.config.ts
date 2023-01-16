@@ -5,7 +5,7 @@ const config: Config = {
     doNotFake: ['nextTick'],
     timerLimit: 1000,
   },
-  displayName: '@rneui/themed',
+  displayName: '@dplus/themed',
   preset: 'react-native',
   testPathIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/dist'],
   moduleNameMapper: {
