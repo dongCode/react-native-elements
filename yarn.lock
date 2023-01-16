@@ -1557,7 +1557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dplus/rn-ui@0.0.1, @dplus/rn-ui@workspace:packages/base":
+"@dplus/rn-ui@0.0.2, @dplus/rn-ui@workspace:packages/base":
   version: 0.0.0-use.local
   resolution: "@dplus/rn-ui@workspace:packages/base"
   dependencies:
@@ -3927,9 +3927,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rneui/themed@workspace:packages/themed"
   dependencies:
-    "@dplus/rn-ui": 0.0.1
+    "@dplus/rn-ui": 0.0.2
   peerDependencies:
-    "@dplus/rn-ui": 0.0.1
+    "@dplus/rn-ui": 0.0.2
   languageName: unknown
   linkType: soft
 
