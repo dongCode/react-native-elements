@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet, Image } from 'react-native';
-import { Text, Card, Button, Icon } from '@rneui/themed';
+import { Text, Card, Button, Icon } from '@dplus/themed';
 import { Header } from '../components/header';
 
 const users = [

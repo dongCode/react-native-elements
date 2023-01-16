@@ -1578,6 +1578,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dplus/themed@workspace:packages/themed":
+  version: 0.0.0-use.local
+  resolution: "@dplus/themed@workspace:packages/themed"
+  dependencies:
+    "@dplus/rn-ui": 0.0.2
+  peerDependencies:
+    "@dplus/rn-ui": 0.0.2
+  languageName: unknown
+  linkType: soft
+
 "@egjs/hammerjs@npm:^2.0.17":
   version: 2.0.17
   resolution: "@egjs/hammerjs@npm:2.0.17"
@@ -3922,16 +3932,6 @@ __metadata:
   checksum: 50ab27edfe98df51df693eb769e2ba6dc94ab8a33dc3cc3dc64d8f892ed9b0765c44704bedcac84183f08e0d479508bc4574c4e45c5f2f724785e39ccf4bfd0f
   languageName: node
   linkType: hard
-
-"@rneui/themed@workspace:packages/themed":
-  version: 0.0.0-use.local
-  resolution: "@rneui/themed@workspace:packages/themed"
-  dependencies:
-    "@dplus/rn-ui": 0.0.2
-  peerDependencies:
-    "@dplus/rn-ui": 0.0.2
-  languageName: unknown
-  linkType: soft
 
 "@segment/loosely-validate-event@npm:^2.0.0":
   version: 2.0.0

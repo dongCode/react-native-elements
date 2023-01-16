@@ -16,7 +16,7 @@ module.exports = function (api) {
               '..',
               'packages/base/src'
             ),
-            '@rneui/themed': path.resolve(
+            '@dplus/themed': path.resolve(
               __dirname,
               '..',
               'packages/themed/src'
