@@ -1,7 +1,7 @@
 {
   "name": "@dplus/themed",
-  "version": "0.0.2",
-  "description": "Cross Platform React Native UI Toolkit",
+  "version": "0.0.3",
+  "description": "React Native Themed UI Components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "prepublish": "tsc --composite false",
@@ -10,10 +10,6 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/react-native-elements"
   },
   "keywords": [
     "react",
@@ -36,26 +32,13 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean-install": "rimraf node_modules && yarn"
   },
-  "author": "RNE Core Team",
+  "author": "D",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-native-elements/react-native-elements/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22pkg%3A+themed%22+"
-  },
-  "homepage": "https://reactnativeelements.com/",
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-elements",
-    "logo": "https://opencollective.com/react-native-elements/logo.txt"
-  },
+
   "peerDependencies": {
     "@dplus/rn-ui": "0.0.2"
   },
   "devDependencies": {
     "@dplus/rn-ui": "0.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/react-native-elements/react-native-elements.git",
-    "directory": "packages/themed"
   }
 }
