@@ -92,7 +92,7 @@
     },
     "scopes": {
       "base": "@dplus/rn-ui",
-      "themed": "@rneui/themed",
+      "themed": "@dplus/themed",
       "website/docs": "Docs"
     }
   }
