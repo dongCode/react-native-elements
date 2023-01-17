@@ -112,10 +112,8 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
   ViewComponent = linearGradientProps || !backgroundImage
     ? View
     : ImageBackground,
-  backIcon,
   elevated,
   title,
-  onBack,
   ...rest
 }) => {
   React.useEffect(() => {
@@ -155,11 +153,9 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
             ])}
             placement="left"
           >
-            {!onBack || !backIcon
-              ? (React.isValidElement(children) && children) ||
-                children[0] ||
-                leftComponent
-              : { backIcon }}
+            {(React.isValidElement(children) && children) ||
+              children[0] ||
+              leftComponent}
           </Children>
           <Children
             style={StyleSheet.flatten([
