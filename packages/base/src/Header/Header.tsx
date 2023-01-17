@@ -134,7 +134,7 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
         style={StyleSheet.flatten([
           {
             height: 40,
-            backgroundColor: '',
+            backgroundColor: '#1F84FF',
             flexDirection: 'row',
             alignItems: 'center',
             width: '100%',
@@ -155,7 +155,7 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
             ])}
             placement="left"
           >
-            {!onBack && backIcon
+            {!onBack || !backIcon
               ? (React.isValidElement(children) && children) ||
                 children[0] ||
                 leftComponent
