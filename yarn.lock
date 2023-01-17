@@ -1575,7 +1575,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dplus/rn-ui@0.0.2, @dplus/rn-ui@workspace:packages/base":
+"@dplus/rn-ui@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@dplus/rn-ui@npm:0.0.2"
+  dependencies:
+    "@types/react-native-vector-icons": ^6.4.10
+    color: ^3.2.1
+    deepmerge: ^4.2.2
+    hoist-non-react-statics: ^3.3.2
+    react-native-ratings: ^8.1.0
+    react-native-size-matters: ^0.4.0
+  peerDependencies:
+    react-native-safe-area-context: ">= 3.0.0"
+    react-native-vector-icons: ">7.0.0"
+  checksum: 1d16c556c7b6d2e502fa7f18e3a957b9b64bc48668426c499478c9bd8427753c97637e54051b7c8cae60bacb0da4fc0fd3d824f82ec478f026b23db7a5608de0
+  languageName: node
+  linkType: hard
+
+"@dplus/rn-ui@workspace:packages/base":
   version: 0.0.0-use.local
   resolution: "@dplus/rn-ui@workspace:packages/base"
   dependencies:

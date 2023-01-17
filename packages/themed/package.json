@@ -1,6 +1,6 @@
 {
   "name": "@dplus/themed",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "React Native Themed UI Components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,6 @@
   },
   "author": "D",
   "license": "MIT",
-
   "peerDependencies": {
     "@dplus/rn-ui": "0.0.2"
   },
