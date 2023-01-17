@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Platform,
-  StatusBar,
   StyleSheet,
   View,
   ImageBackground,
@@ -13,9 +12,10 @@ import {
   ImageSourcePropType,
   ImageStyle,
   ViewStyle,
+  SafeAreaView,
+  Text,
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { defaultTheme, RneFunctionComponent } from '../helpers';
+import { RneFunctionComponent } from '../helpers';
 import { Children } from './components/HeaderChildren';
 import { HeaderIcon } from './components/HeaderIcon';
 
@@ -75,7 +75,19 @@ export interface HeaderProps extends ViewProps {
 
   /** Elevation for header */
   elevated?: boolean;
+
+  title?: string;
+  onBack?: () => void;
+  backIcon?: JSX.Element;
 }
+
+interface ITitle {
+  title?: string;
+}
+const Title = (props: ITitle) => {
+  const { title = '条件查询' } = props;
+  return <Text style={{ color: 'white', fontSize: 18 }}>{title}</Text>;
+};
 
 /** Headers are navigation components that display information and actions relating to the current screen.
  * **Note:**
@@ -100,8 +112,10 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
   ViewComponent = linearGradientProps || !backgroundImage
     ? View
     : ImageBackground,
-  theme = defaultTheme,
+  backIcon,
   elevated,
+  title,
+  onBack,
   ...rest
 }) => {
   React.useEffect(() => {
@@ -113,26 +127,17 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
   });
 
   return (
-    <>
-      <StatusBar
-        barStyle={barStyle}
-        translucent={true}
-        backgroundColor={backgroundColor || theme?.colors?.primary}
-        {...statusBarProps}
-      />
+    <SafeAreaView>
       <ViewComponent
         testID="headerContainer"
         {...rest}
         style={StyleSheet.flatten([
           {
-            borderBottomColor: '#f2f2f2',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            paddingHorizontal: 10,
-            paddingVertical: 10,
-            backgroundColor: theme?.colors?.primary,
+            height: 40,
+            backgroundColor: '',
             flexDirection: 'row',
-            justifyContent: 'space-between',
             alignItems: 'center',
+            width: '100%',
           },
           backgroundColor && { backgroundColor },
           elevated && styles.elevatedHeader,
@@ -142,10 +147,7 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
         imageStyle={backgroundImageStyle}
         {...linearGradientProps}
       >
-        <SafeAreaView
-          edges={['left', 'top', 'right']}
-          style={styles.headerSafeView}
-        >
+        <>
           <Children
             style={StyleSheet.flatten([
               placement === 'center' && styles.rightLeftContainer,
@@ -153,9 +155,11 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
             ])}
             placement="left"
           >
-            {(React.isValidElement(children) && children) ||
-              children[0] ||
-              leftComponent}
+            {!onBack && backIcon
+              ? (React.isValidElement(children) && children) ||
+                children[0] ||
+                leftComponent
+              : { backIcon }}
           </Children>
           <Children
             style={StyleSheet.flatten([
@@ -170,7 +174,11 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
             ])}
             placement={placement}
           >
-            {children[1] || centerComponent}
+            {typeof title !== 'string' ? (
+              children[1] || centerComponent
+            ) : (
+              <Title title={title} />
+            )}
           </Children>
 
           <Children
@@ -182,19 +190,15 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
           >
             {children[2] || rightComponent}
           </Children>
-        </SafeAreaView>
+        </>
       </ViewComponent>
-    </>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  headerSafeView: {
-    width: '100%',
-    flexDirection: 'row',
-  },
   centerContainer: {
-    flex: 3,
+    flex: 1,
   },
   rightLeftContainer: {
     flex: 1,
