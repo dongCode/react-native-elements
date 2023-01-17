@@ -1558,7 +1558,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dplus/rn-ui@workspace:packages/base":
+"@dplus/rn-ui@workspace:^, @dplus/rn-ui@workspace:packages/base":
   version: 0.0.0-use.local
   resolution: "@dplus/rn-ui@workspace:packages/base"
   dependencies:
@@ -8297,6 +8297,7 @@ __metadata:
   resolution: "dplus-ui@workspace:."
   dependencies:
     "@babel/plugin-proposal-private-methods": ^7.18.6
+    "@dplus/rn-ui": "workspace:^"
     "@react-native-community/eslint-config": ^2.0.0
     "@testing-library/react-native": ^11.5.0
     "@types/jest": ^27.4.0

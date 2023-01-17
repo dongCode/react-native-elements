@@ -49,15 +49,6 @@
   },
   "author": "RNE Core Team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-native-elements/react-native-elements/issues"
-  },
-  "homepage": "https://reactnativeelements.com/",
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-elements",
-    "logo": "https://opencollective.com/react-native-elements/logo.txt"
-  },
   "lint-staged": {
     "packages/**/*.{ts,tsx}": [
       "eslint --fix",
@@ -91,5 +82,8 @@
       "themed": "@dplus/themed",
       "website/docs": "Docs"
     }
+  },
+  "dependencies": {
+    "@dplus/rn-ui": "workspace:^"
   }
 }

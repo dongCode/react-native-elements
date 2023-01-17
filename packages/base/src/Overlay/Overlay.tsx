@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  View,
   StyleSheet,
   Platform,
   Pressable,
@@ -10,7 +9,7 @@ import {
   StyleProp,
   KeyboardAvoidingView,
 } from 'react-native';
-import Color from 'color';
+// import Color from 'color';
 import {
   getBehaviorType,
   InlinePressableProps,
@@ -46,7 +45,6 @@ export const Overlay: RneFunctionComponent<OverlayProps> = ({
   backdropStyle,
   overlayStyle,
   onBackdropPress = () => null,
-  fullScreen = false,
   ModalComponent = Modal,
   isVisible,
   pressableProps,
@@ -76,22 +74,7 @@ export const Overlay: RneFunctionComponent<OverlayProps> = ({
       pointerEvents="box-none"
       behavior={getBehaviorType}
     >
-      <View
-        testID="RNE__Overlay"
-        style={StyleSheet.flatten([
-          styles.overlay,
-          fullScreen && styles.fullscreen,
-          {
-            backgroundColor: Color(theme?.colors?.white)
-              .lighten(10)
-              .rgb()
-              .toString(),
-          },
-          overlayStyle,
-        ])}
-      >
-        {children}
-      </View>
+      {children}
     </KeyboardAvoidingView>
   </ModalComponent>
 );
