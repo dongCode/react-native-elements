@@ -8,7 +8,6 @@ const config = {
   organizationName: 'react-native-elements',
   clientModules: [
     require.resolve('./plugins/snackPlayerInitializer.js'),
-    require.resolve('./plugins/gtag.ts'),
   ],
   /* path to images for header/footer */
   favicon: '/img/website/logo.png',
@@ -76,14 +75,14 @@ const config = {
       },
       // hideOnScroll: true,
       items: [
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownItemsAfter: [{ to: 'versions', label: 'All versions' }],
-          // Do not add the link active class when browsing docs.
-          dropdownActiveClassDisabled: true,
-          docsPluginId: 'default',
-        },
+        // {
+        //   type: 'docsVersionDropdown',
+        //   position: 'right',
+        //   dropdownItemsAfter: [{ to: 'versions', label: 'All versions' }],
+        //   // Do not add the link active class when browsing docs.
+        //   dropdownActiveClassDisabled: true,
+        //   docsPluginId: 'default',
+        // },
         // { to: 'docs/', label: 'Docs', position: 'right' },
         // { to: 'help', label: 'Help', position: 'right' },
         // { to: 'blog', label: 'Blog', position: 'right' },
