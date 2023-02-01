@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Header, Icon } from '@rneui/base';
+import { Header, Icon } from '@dplus/base';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -18,7 +18,7 @@ const HeaderPlayground = () => {
       },
       backgroundImageStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       barStyle: {
         type: PropTypes.Enum,
@@ -32,30 +32,30 @@ const HeaderPlayground = () => {
 
       centerComponent: {
         type: PropTypes.Object,
-        value: `{ text: 'MY TITLE', style: { color: '#fff' } }`,
+        value: "{ text: 'MY TITLE', style: { color: '#fff' } }",
         description:
           '{ text: string, ...Text props} OR { icon: string, ...Icon props} OR  React element or component',
       },
       centerContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       containerStyle: {
         type: PropTypes.Object,
-        value: `{width:350}`,
+        value: '{width:350}',
       },
       leftComponent: {
         type: PropTypes.Object,
-        value: `{ icon: 'menu', color: '#fff' }`,
+        value: "{ icon: 'menu', color: '#fff' }",
       },
       leftContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
-        description: `{...Gradient props}`,
+        value: '{}',
+        description: '{...Gradient props}',
       },
       linearGradientProps: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
 
       placement: {
@@ -70,15 +70,15 @@ const HeaderPlayground = () => {
 
       rightComponent: {
         type: PropTypes.Object,
-        value: `{ icon: 'home', color: '#fff' }`,
+        value: "{ icon: 'home', color: '#fff' }",
       },
       rightContainerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       statusBarProps: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       ViewComponent: {
         type: PropTypes.ReactNode,
@@ -90,7 +90,7 @@ const HeaderPlayground = () => {
       Icon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['Header', 'Icon'],
       },
       'react-native-safe-area-context': {

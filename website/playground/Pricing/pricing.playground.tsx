@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PricingCard } from '@rneui/base';
+import { PricingCard } from '@dplus/base';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -9,7 +9,7 @@ const PricingPlayground = () => {
     props: {
       button: {
         type: PropTypes.Object,
-        value: `{ title: 'GET STARTED', icon: 'flight-takeoff' }`,
+        value: "{ title: 'GET STARTED', icon: 'flight-takeoff' }",
       },
       color: {
         type: PropTypes.String,
@@ -17,19 +17,19 @@ const PricingPlayground = () => {
       },
       containerStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       info: {
         type: PropTypes.Array,
-        value: `['1 User', 'Basic Support', 'All Core Features']`,
+        value: "['1 User', 'Basic Support', 'All Core Features']",
       },
       infoStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       onButtonPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onButtonPress()")`,
+        value: '() => console.log("onButtonPress()")',
       },
       price: {
         type: PropTypes.String,
@@ -37,7 +37,7 @@ const PricingPlayground = () => {
       },
       pricingStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
 
       title: {
@@ -46,18 +46,18 @@ const PricingPlayground = () => {
       },
       titleStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       wrapperStyle: {
         type: PropTypes.Object,
-        value: `{padding:10}`,
+        value: '{padding:10}',
       },
     },
     scope: {
       PricingCard,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['PricingCard'],
       },
     },

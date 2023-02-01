@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CheckBox } from '@rneui/base';
+import { CheckBox } from '@dplus/base';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -123,7 +123,7 @@ const HeaderPlayground = () => {
       CheckBox,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['CheckBox'],
       },
     },

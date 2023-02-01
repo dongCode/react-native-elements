@@ -11,7 +11,7 @@ export default function createReactViewBaseConfig(componentName, RNComponent) {
       RNComponent,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: [componentName],
       },
     },

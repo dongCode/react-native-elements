@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { View } from 'react-native';
-import { Rating } from '@rneui/base';
+import { Rating } from '@dplus/base';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 import SocialIconPlayground from '.';
@@ -90,7 +90,7 @@ const RatingPlayground = () => {
       Rating,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['Rating'],
       },
     },

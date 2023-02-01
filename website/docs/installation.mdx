@@ -24,14 +24,14 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @rneui/themed @rneui/base
+npm install @dplus/themed @dplus/base
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn add @rneui/themed @rneui/base
+yarn add @dplus/themed @dplus/base
 ```
 
 </TabItem>
@@ -48,16 +48,16 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @rneui/base@edge @rneui/themed@edge
+npm install @dplus/base@edge @dplus/themed@edge
 ```
 
 If you are facing issue while installing from `edge` dist-tag, you can install directly from Github
 
 ```bash
-# @rneui/base
+# @dplus/base
 npm install react-native-elements/react-native-elements#base
 
-# @rneui/themed
+# @dplus/themed
 npm install react-native-elements/react-native-elements#themed
 ```
 
@@ -65,17 +65,17 @@ npm install react-native-elements/react-native-elements#themed
 <TabItem value="yarn">
 
 ```bash
-yarn add @rneui/base@edge @rneui/themed@edge
+yarn add @dplus/base@edge @dplus/themed@edge
 ```
 
 If you are facing issue while installing from `edge` dist-tag, you can install directly from Github
 
 ```bash
-# @rneui/base
-yarn add @rneui/base@github:react-native-elements/react-native-elements#base
+# @dplus/base
+yarn add @dplus/base@github:react-native-elements/react-native-elements#base
 
-# @rneui/themed
-yarn add @rneui/themed@github:react-native-elements/react-native-elements#themed
+# @dplus/themed
+yarn add @dplus/themed@github:react-native-elements/react-native-elements#themed
 ```
 
 </TabItem>
@@ -214,14 +214,14 @@ values={[
 <TabItem value="stable">
 
 ```bash
-npx create-expo-app --template @rneui/template
+npx create-expo-app --template @dplus/template
 ```
 
 </TabItem>
 <TabItem value="edge">
 
 ```bash
-npx create-expo-app --template @rneui/template@edge
+npx create-expo-app --template @dplus/template@edge
 ```
 
 </TabItem>
@@ -248,7 +248,7 @@ The major difference is that React Native can support JSX and advanced javascrip
 After creating a new create-react-app project, run the following commands.
 
 ```bash
-yarn add  @rneui/base @rneui/themed react-native-web react-native-vector-icons
+yarn add  @dplus/base @dplus/themed react-native-web react-native-vector-icons
 ```
 
 ```bash
@@ -264,8 +264,8 @@ const { override, addBabelPlugins, babelInclude } = require('customize-cra');
 module.exports = override(
   ...addBabelPlugins('@babel/plugin-proposal-class-properties'),
   babelInclude([
-    path.resolve(__dirname, 'node_modules/@rneui/base'),
-    path.resolve(__dirname, 'node_modules/@rneui/themed'),
+    path.resolve(__dirname, 'node_modules/@dplus/base'),
+    path.resolve(__dirname, 'node_modules/@dplus/themed'),
     path.resolve(__dirname, 'node_modules/react-native-vector-icons'),
     path.resolve(__dirname, 'node_modules/react-native-ratings'),
     path.resolve(__dirname, 'src'),

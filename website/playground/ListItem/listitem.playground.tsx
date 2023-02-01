@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TouchableHighlight } from 'react-native';
-import { ListItem, Avatar, Text } from '@rneui/base';
+import { ListItem, Avatar, Text } from '@dplus/base';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -68,7 +68,7 @@ const ListItemPlayground = () => {
       TouchableHighlight,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['ListItem', 'Avatar'],
       },
       'react-native': {

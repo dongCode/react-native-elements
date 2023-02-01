@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SocialIcon } from '@rneui/base';
+import { SocialIcon } from '@dplus/base';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -93,7 +93,7 @@ const SocialIconPlayground = () => {
       SocialIcon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['SocialIcon'],
       },
     },

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image } from '@rneui/base';
+import { Image } from '@dplus/base';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -54,7 +54,7 @@ const ImagePlayground = () => {
       Image,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['Image'],
       },
     },

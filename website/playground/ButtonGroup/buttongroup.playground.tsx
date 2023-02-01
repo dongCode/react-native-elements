@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ButtonGroup } from '@rneui/base';
+import { ButtonGroup } from '@dplus/base';
 
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
@@ -10,12 +10,12 @@ const ButtonGroupPlayground = () => {
     props: {
       buttonStyle: {
         type: PropTypes.Object,
-        value: `{width:100}`,
+        value: '{width:100}',
       },
-      buttonContainerStyle: { type: PropTypes.Object, value: `{}` },
+      buttonContainerStyle: { type: PropTypes.Object, value: '{}' },
       buttons: {
         type: PropTypes.Array,
-        value: `['Hello', 'World', 'React',"Native","Elements"]`,
+        value: "['Hello', 'World', 'React',\"Native\",\"Elements\"]",
       },
       Component: {
         type: PropTypes.ReactNode,
@@ -23,40 +23,40 @@ const ButtonGroupPlayground = () => {
           'React Native Component	TouchableOpacity (ios) or TouchableNativeFeedback (android)',
         value: null,
       },
-      containerStyle: { type: PropTypes.Object, value: `{}` },
+      containerStyle: { type: PropTypes.Object, value: '{}' },
       disabled: {
         type: PropTypes.Array,
         description:
           'boolean OR number[]. Controls if buttons are disabled. Setting true makes all of them disabled, while using an array only makes those indices disabled.',
 
-        value: `[3,4]`,
+        value: '[3,4]',
       },
       disabledStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       disabledTextStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       disabledSelectedStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       disabledSelectedTextStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       innerBorderStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       onPress: {
         type: PropTypes.Function,
-        value: `(selectedIdx) => setSelectedIndex(selectedIdx)`,
+        value: '(selectedIdx) => setSelectedIndex(selectedIdx)',
         propHook: {
-          what: `selectedIdx`,
-          into: `selectedIndex`,
+          what: 'selectedIdx',
+          into: 'selectedIndex',
         },
       },
       selectMultiple: {
@@ -65,25 +65,25 @@ const ButtonGroupPlayground = () => {
       },
       selectedButtonStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       selectedIndex: {
         type: PropTypes.Number,
-        value: `1`,
+        value: '1',
         stateful: true,
       },
       selectedIndexes: {
         type: PropTypes.Array,
-        value: `[]`,
+        value: '[]',
         stateful: true,
       },
       selectedTextStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       textStyle: {
         type: PropTypes.Object,
-        value: `{}`,
+        value: '{}',
       },
       underlayColor: {
         type: PropTypes.String,
@@ -98,7 +98,7 @@ const ButtonGroupPlayground = () => {
       ButtonGroup,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['ButtonGroup'],
       },
     },

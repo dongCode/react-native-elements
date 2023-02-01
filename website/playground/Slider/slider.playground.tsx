@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Slider, Icon } from '@rneui/base';
+import { Slider, Icon } from '@dplus/base';
 import Playground from '../../src/components/Playground';
 import { useView, PropTypes } from 'react-view';
 
@@ -137,7 +137,7 @@ const SliderPlayground = () => {
       Icon,
     },
     imports: {
-      '@rneui/base': {
+      '@dplus/base': {
         named: ['Slider', 'Icon'],
       },
     },
