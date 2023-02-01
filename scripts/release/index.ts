@@ -14,15 +14,15 @@ type TPkg = {
   manifestLocation: string;
 };
 
-const pkgScope = '@rneui';
+const pkgScope = '@dplus';
 
 class Release {
   static async bump(pkg: TPkg) {
     const manifest = JSON.parse(fs.readFileSync(pkg.manifestLocation, 'utf8'));
     manifest.version = pkg.version;
     if (pkg.name === 'themed') {
-      manifest.devDependencies['@rneui/base'] = pkg.version;
-      manifest.peerDependencies['@rneui/base'] = pkg.version;
+      manifest.devDependencies['@dplus/base'] = pkg.version;
+      manifest.peerDependencies['@dplus/base'] = pkg.version;
     }
     fs.writeFileSync(pkg.manifestLocation, JSON.stringify(manifest, null, 2));
     await updateChangelog(pkg, 'independent', {

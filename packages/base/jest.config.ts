@@ -6,7 +6,7 @@ const config: Config = {
     timerLimit: 1000,
   },
   preset: 'react-native',
-  displayName: '@rneui/base',
+  displayName: '@dplus/base',
   testPathIgnorePatterns: [
     './src/SearchBar/__tests__/common.tsx',
     '<rootDir>/node_modules',

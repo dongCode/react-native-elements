@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ThemeProvider, createTheme } from '@rneui/themed';
+import { ThemeProvider, createTheme } from '@dplus/themed';
 import RootNavigator from './src/navigation/RootNavigator';
 import { cacheImages, cacheFonts } from './src/helpers/AssetsCaching';
 import vectorFonts from './src/helpers/vector-fonts';

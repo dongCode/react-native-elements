@@ -1,5 +1,5 @@
 {
-  "name": "@rneui/base",
+  "name": "@dplus/base",
   "version": "4.0.0-rc.7",
   "description": "Cross Platform React Native UI Toolkit",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
     "native",
     "react native",
     "react native elements",
-    "rneui",
+    "dplus",
     "react native ui",
     "react native components",
     "ui library",

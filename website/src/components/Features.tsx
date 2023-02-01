@@ -1,12 +1,7 @@
 import React from 'react';
 import '../../static/css/components.css';
 import Link from '@docusaurus/Link';
-import {
-  MdOutlineDevices,
-  MdCode,
-  MdEdit,
-  MdPeopleOutline,
-} from 'react-icons/md';
+import { MdOutlineDevices, MdCode, MdEdit } from 'react-icons/md';
 import { IconTag } from './IconTag';
 
 type FeatureTypes = {

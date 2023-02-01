@@ -2,20 +2,20 @@ import { withTheme } from '../config';
 import {
   DialogLoading,
   DialogLoadingProps,
-} from '@rneui/base/dist/Dialog/Dialog.Loading';
+} from '@dplus/base/dist/Dialog/Dialog.Loading';
 import {
   DialogTitle,
   DialogTitleProps,
-} from '@rneui/base/dist/Dialog/Dialog.Title';
+} from '@dplus/base/dist/Dialog/Dialog.Title';
 import {
   DialogButton,
   DialogButtonProps,
-} from '@rneui/base/dist/Dialog/Dialog.Button';
+} from '@dplus/base/dist/Dialog/Dialog.Button';
 import {
   DialogActions,
   DialogActionsProps,
-} from '@rneui/base/dist/Dialog/Dialog.Actions';
-import { DialogBase, DialogProps } from '@rneui/base/dist/Dialog/Dialog';
+} from '@dplus/base/dist/Dialog/Dialog.Actions';
+import { DialogBase, DialogProps } from '@dplus/base/dist/Dialog/Dialog';
 
 const ThemedDialogLoading = withTheme<DialogLoadingProps>(
   DialogLoading,

@@ -14,18 +14,12 @@ import {
   LiveEditor,
 } from 'react-live';
 import clsx from 'clsx';
-import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import { usePrismTheme } from '@docusaurus/theme-common';
 import styles from './styles.module.css';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import { MdCode } from 'react-icons/md';
-import { SiExpo } from 'react-icons/si';
-
-function Header({ children }) {
-  return <div className={clsx(styles.playgroundHeader)}>{children}</div>;
-}
 
 function LivePreviewLoader() {
   // Is it worth improving/translating?
@@ -58,7 +52,7 @@ function ThemedLiveEditor(props) {
   );
 }
 
-function EditorWithHeader({ showCode, preImports = '', wrapper }) {
+function EditorWithHeader({ showCode, preImports = '' }) {
   const [open, setOpen] = React.useState(showCode);
 
   const handleToggle = () => {
@@ -95,7 +89,7 @@ export default function Playground({ children, transformCode, ...props }) {
     siteConfig: { themeConfig },
   } = useDocusaurusContext();
   const {
-    liveCodeBlock: { playgroundPosition },
+    liveCodeBlock: {},
   } = themeConfig;
   const prismTheme = usePrismTheme();
 

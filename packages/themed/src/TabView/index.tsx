@@ -1,9 +1,9 @@
 import { withTheme } from '../config';
-import { TabViewBase, TabViewProps } from '@rneui/base/dist/TabView/TabView';
+import { TabViewBase, TabViewProps } from '@dplus/base/dist/TabView/TabView';
 import {
   TabViewItem,
   TabViewItemProps,
-} from '@rneui/base/dist/TabView/TabView.Item';
+} from '@dplus/base/dist/TabView/TabView.Item';
 
 export type { TabViewProps, TabViewItemProps };
 

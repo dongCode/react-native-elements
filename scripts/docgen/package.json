@@ -1,5 +1,5 @@
 {
-  "name": "@rneui/doc-gen",
+  "name": "@dplus/doc-gen",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.ts",

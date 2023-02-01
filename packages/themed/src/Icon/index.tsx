@@ -5,7 +5,7 @@ import {
   IconNode,
   IconObject,
   IconType,
-} from '@rneui/base/dist/Icon/Icon';
+} from '@dplus/base/dist/Icon/Icon';
 
 export { Icon };
 export type { IconProps, IconNode, IconObject, IconType };
