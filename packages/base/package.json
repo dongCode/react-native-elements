@@ -11,10 +11,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/react-native-elements"
-  },
   "keywords": [
     "react",
     "native",
