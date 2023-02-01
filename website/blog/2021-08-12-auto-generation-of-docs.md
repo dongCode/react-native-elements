@@ -59,7 +59,7 @@ yarn test
 
 我们还在主要测试过程中包含了更改，因此这将自动与工作流一起运行，以及当您从项目的根目录运行 `yarn test` 命令时。
 
-##将来
+## 将来
 
 一些组件是基于类的。 它们是：Input、SearchBar、Rating（来自 https://github.com/Monte9/react-native-ratings）。 如果您将组件更改为基于 Functional/hooks，请将其从 `website/scripts/docgen/getComponentFiles.ts` 下的 `filesToExclude` 数组中删除。 这些是仍然手动处理的组件文件的路径。
 
