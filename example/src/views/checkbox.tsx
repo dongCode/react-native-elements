@@ -27,6 +27,13 @@ const CheckboxComponent: React.FunctionComponent<
       />
 
       <CheckBox
+        disabled={true}
+        title="disabled 不居中"
+        checked={check2}
+        onPress={() => setCheck2(!check2)}
+      />
+
+      <CheckBox
         center
         title="Click Here"
         checkedIcon="dot-circle-o"

@@ -5,6 +5,7 @@ import { cacheImages, cacheFonts } from './src/helpers/AssetsCaching';
 import vectorFonts from './src/helpers/vector-fonts';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -54,6 +55,7 @@ export default () => {
   return (
     <SafeAreaProvider onLayout={onLayoutRootView}>
       <ThemeProvider theme={theme}>
+        <StatusBar />
         <RootNavigator />
       </ThemeProvider>
     </SafeAreaProvider>

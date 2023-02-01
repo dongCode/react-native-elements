@@ -11,15 +11,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/react-native-elements"
-  },
   "keywords": [
     "react",
     "native",
     "react native",
-    "react native elements",
     "dplus",
     "themed",
     "react native ui",
@@ -38,17 +33,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean-install": "rimraf node_modules && yarn"
   },
-  "author": "RNE Core Team",
+  "author": "D",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-native-elements/react-native-elements/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22pkg%3A+themed%22+"
-  },
-  "homepage": "https://reactnativeelements.com/",
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-elements",
-    "logo": "https://opencollective.com/react-native-elements/logo.txt"
-  },
   "peerDependencies": {
     "@dplus/base": "4.0.1"
   },

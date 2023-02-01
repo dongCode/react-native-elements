@@ -28,7 +28,7 @@
     "bootstrap"
   ],
   "scripts": {
-    "build": "tsc --composite false",
+    "build": "tsc --composite false --jsx",
     "test": "jest",
     "test:update": "jest -u",
     "test:ci": "jest --runInBand",
