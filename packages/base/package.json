@@ -1,6 +1,6 @@
 {
   "name": "@dplus/base",
-  "version": "4.0.0-rc.7",
+  "version": "4.0.1",
   "description": "Cross Platform React Native UI Toolkit",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,6 @@
     "react",
     "native",
     "react native",
-    "react native elements",
     "dplus",
     "react native ui",
     "react native components",
@@ -37,12 +36,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean-install": "rimraf node_modules && yarn"
   },
-  "author": "RNE Core Team",
+  "author": "D",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-native-elements/react-native-elements/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+-label%3A%22pkg%3A+circular-slider%22+-label%3A%22pkg%3A+themed%22+"
-  },
-  "homepage": "https://reactnativeelements.com/",
   "dependencies": {
     "@types/react-native-vector-icons": "^6.4.10",
     "color": "^3.2.1",
@@ -61,10 +56,5 @@
   "peerDependencies": {
     "react-native-safe-area-context": ">= 3.0.0",
     "react-native-vector-icons": ">7.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/react-native-elements/react-native-elements.git",
-    "directory": "packages/base"
   }
 }
